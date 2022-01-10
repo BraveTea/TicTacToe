@@ -1,0 +1,7 @@
+TODO Test a filled SquareGameboard with the winner methods
+
+TODO remove test code from Programme. General cleanup
+
+TODO After that write code to input pieces onto the board
+
+TODO After that write code to play the game in a while loop
