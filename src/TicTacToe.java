@@ -9,8 +9,9 @@ public class TicTacToe {
 
 
     public boolean isAllEqual(Piece[] array){
+        char pieceType = array[0].getPieceType();
         for (int i = 0; i < array.length; i++){
-            if(array[0].getPieceType() != array[i].getPieceType()){
+            if(pieceType != array[i].getPieceType()){
                 return false;
             }
         }
