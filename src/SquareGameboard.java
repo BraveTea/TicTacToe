@@ -7,14 +7,20 @@ public class SquareGameboard {
 
     //perhaps the board should be filled with empty objects and replaced.
     //reason is: I don't know what a null value will do to my code.
+    //I was right, did a small test and it turns out that a null value will throw a NullPointerException.
 
     public SquareGameboard(int size) {
         this.size = size;
         gameboard = new Piece[size][size];
+        for (int i = 0; i < gameboard.length; i++){
+            for (int j = 0; j < gameboard[i].length; j++){
+                gameboard[i][j] = new Piece(' ');
+            }
+        }
     }
 
-    public void addPieceToGameboard(Piece piece, int row, int col){
-        gameboard[row][col] = piece;
+    public void addPieceToGameboard(char pieceType, int row, int col){
+        gameboard[row][col] = new Piece(pieceType);
     }
 
     public Piece[][] getGameboard() {
