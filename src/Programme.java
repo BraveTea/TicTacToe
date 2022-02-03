@@ -6,12 +6,23 @@ public class Programme {
         SquareGameboard board1 = new SquareGameboard(3);
         TicTacToe ticTacToe = new TicTacToe();
 
-        for (int row = 0; row < board1.getGameboard().length; row++){
-            for (int col = 0; col < board1.getGameboard()[row].length; col++){
-                Piece xPiece = new Piece('x');
-                board1.addPieceToGameboard(xPiece, row, col);
-            }
-        }
+        ticTacToe.runGame();
+//
+//        board1.addPieceToGameboard('x', 0,0);
+//        board1.addPieceToGameboard('o', 0,1);
+//        board1.addPieceToGameboard('o', 0,2);
+//        board1.addPieceToGameboard('0', 1,0);
+//        board1.addPieceToGameboard('x', 1,1);
+//        board1.addPieceToGameboard('o', 1,2);
+//        board1.addPieceToGameboard('o', 2,0);
+//        board1.addPieceToGameboard('o', 2,1);
+//        board1.addPieceToGameboard('x', 2,2);
+//
+//        board1.twoDimensionalArrayToString(board1.getGameboard());
+//        System.out.println(ticTacToe.winnerOnRows(board1.getGameboard()));
+//        System.out.println(ticTacToe.winnerOnCols(board1.getGameboard()));
+//        System.out.println(ticTacToe.winnerOnDiagonal(board1.getGameboard()));
+
 
 
         /*
@@ -21,28 +32,28 @@ public class Programme {
 
         */
 
-        Piece[][] testMatrix = new Piece[3][3];
-
-        testMatrix[0][0] = new Piece('x');
-        testMatrix[1][0] = new Piece('o');
-        testMatrix[2][0] = new Piece('x');
-
-        testMatrix[0][1] = new Piece('o');
-        testMatrix[1][1] = new Piece('x');
-        testMatrix[2][1] = new Piece('o');
-
-        testMatrix[0][2] = new Piece('o');
-        testMatrix[1][2] = new Piece('x');
-        testMatrix[2][2] = new Piece('x');
-
-
-        board1.twoDimensionalArrayToString(board1.getGameboard());
-
-        System.out.println(ticTacToe.winnerOnRows(testMatrix));
-
-        System.out.println(ticTacToe.winnerOnCols(testMatrix));
-
-        System.out.println(ticTacToe.winnerOnDiagonal(testMatrix));
+//        Piece[][] testMatrix = new Piece[3][3];
+//
+//        testMatrix[0][0] = new Piece('x');
+//        testMatrix[1][0] = new Piece('o');
+//        testMatrix[2][0] = new Piece('x');
+//
+//        testMatrix[0][1] = new Piece('o');
+//        testMatrix[1][1] = new Piece('x');
+//        testMatrix[2][1] = new Piece('o');
+//
+//        testMatrix[0][2] = new Piece('o');
+//        testMatrix[1][2] = new Piece('x');
+//        testMatrix[2][2] = new Piece('x');
+//
+//
+//        board1.twoDimensionalArrayToString(board1.getGameboard());
+//
+//        System.out.println(ticTacToe.winnerOnRows(testMatrix));
+//
+//        System.out.println(ticTacToe.winnerOnCols(testMatrix));
+//
+//        System.out.println(ticTacToe.winnerOnDiagonal(testMatrix));
 
 
     }

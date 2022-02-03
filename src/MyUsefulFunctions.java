@@ -2,11 +2,11 @@ public class MyUsefulFunctions {
 
     MyUsefulFunctions(){}
 
-    int returnIntegerDecimalFromBinaryString(String binaryString){
+    static int returnIntegerDecimalFromBinaryString(String binaryString){
         return Integer.parseInt(binaryString, 2);
     }
 
-    void twoDimensionalArrayToString(int[][] array){
+    static void twoDimensionalArrayToString(int[][] array){
 
         for (int row = 0; row < array.length; row++){
             for (int col = 0; col < array[row].length; col++){
@@ -16,7 +16,7 @@ public class MyUsefulFunctions {
         }
     }
 
-    void twoDimensionalArrayToString(Object[][] array){
+    static void twoDimensionalArrayToString(Object[][] array){
 
         for (int row = 0; row < array.length; row++){
             for (int col = 0; col < array[row].length; col++){
@@ -26,7 +26,7 @@ public class MyUsefulFunctions {
         }
     }
 
-    void twoDimensionalArrayToString(String[][] array){
+    static void twoDimensionalArrayToString(String[][] array){
 
         for (int row = 0; row < array.length; row++){
             for (int col = 0; col < array[row].length; col++){
@@ -36,7 +36,7 @@ public class MyUsefulFunctions {
         }
     }
 
-    void twoDimensionalArrayToString(double[][] array){
+    static void twoDimensionalArrayToString(double[][] array){
 
         for (int row = 0; row < array.length; row++){
             for (int col = 0; col < array[row].length; col++){
@@ -46,7 +46,7 @@ public class MyUsefulFunctions {
         }
     }
 
-    void twoDimensionalArrayToString(char[][] array){
+    static void twoDimensionalArrayToString(char[][] array){
 
         for (int row = 0; row < array.length; row++){
             for (int col = 0; col < array[row].length; col++){
@@ -56,15 +56,7 @@ public class MyUsefulFunctions {
         }
     }
 
-    public boolean rowColEquals(Object[] array){
-        for (int i = 0; i < array.length; i++){
-            Object check = array[0];
-            if (array[i] != check){
-                return false;
-            }
-        }
-        return true;
-    }
+
 /*
         [0][0]  [0][1]  [0][2]
         [1][0]  [1][1]  [1][2]
